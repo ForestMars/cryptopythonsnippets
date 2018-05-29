@@ -28,4 +28,4 @@ def load(url,printout=False,delay=0,remove_bottom_rows=0,remove_columns=[]):
     return df
 
 def build_request():
-    return "{ \"type\": \"subscribe\",    \"channels\": [{ \"name\": \"heartbeat\", \"product_ids\": [\"ETH-USD\"] }]}"
+    return "{ \"type\": \"subscribe\",    \"channels\": [{ \"name\": \"ticker\", \"heartbeat\", \"product_ids\": [\"ETH-USD\"] }]}"
